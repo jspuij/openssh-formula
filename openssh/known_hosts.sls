@@ -10,7 +10,6 @@ manage ssh_known_hosts file:
     - source: salt://openssh/files/ssh_known_hosts
     - template: jinja
     - user: root
-    - group: root
     - mode: 644
     - require:
       - pkg: ensure dig is available
